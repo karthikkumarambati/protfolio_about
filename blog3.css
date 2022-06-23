@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav{
+    background-color: darkturquoise;
+    width: 100%;
+    height: 80px;
+      
+}
+.link{
+    font-size: 40px;
+    color: floralwhite;
+    text-shadow: 2px 4px 8px rgb(4, 56, 88),0px 0px 10px white,0px 0px 20px rgb(104, 202, 104);
+    font-weight: bold;
+    padding-left: 5px;
+    padding-top: 2px;
+}
+#link{
+    float: right;
+    margin-top: 30px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+nav ul li{
+    display: inline-block;
+    padding-left: 10px;
+    margin: 0.5px;
+}
+nav ul li a{
+    color: gainsboro;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding-left: 10px;
+
+}
+nav ul li a:active{
+    background-color: rgb(242, 242, 248);
+    color: dodgerblue;
+}
+nav ul li a:hover{
+    color: rgb(4, 56, 88);
+}
+.care{
+    float: right;
+    font-size: 30px;
+    color: seashell;
+    line-height: 80px;
+    margin-right: 30px;
+    cursor: progress;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    label.link{
+        font-size: 30px;
+    
+    }
+    nav ul li a{
+        font-size: 16px;
+        padding-top: 20px;
+    }
+}
+@media (max-width: 858px){
+    .care{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        background-color: slategrey;
+        left: -100%;
+        text-align: center;
+        transition: .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+       font-size: 20px;
+       
+    }
+    a:hover,a:active{
+        background: none;
+        color: tomato;
+    } 
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+.die{
+    background-image: url(https://image.freepik.com/free-photo/flat-lay-photo-office-desk-with-laptop-copy-space-background_1150-45598.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+.rock{
+    box-sizing: border-box;
+    box-shadow: 2px 4px 20px black,0 0 30px skyblue,0 0 40px lightcyan;
+    float: right;
+    margin-top: 20px;
+    margin-left: 450px;
+    margin-right: 30px;
+    height: 640px;
+    width: 800px;
+}
+.free{
+    margin-left: 20px;
+    margin-right: 250px;
+    word-spacing: 5px;
+}
+.free h1{
+    padding-top: 20px;
+    border-bottom: solid;
+    border-color: skyblue;
+    font-size: 30px;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 4px 20px skyblue, 0 0 20px black, 0 0 30px blue;
+}
+p{
+    padding-top: 10px;
+}
+u{
+    border-bottom: solid;
+    border-color: teal;
+}
+ img{
+    float: right;
+    padding-right: 10px;
+    border-radius: 50%;
+    padding-top: 15px;
+}
+.free h2{
+    float: right;
+    padding-top: 20px;
+    height: 200px;
+    font-size: 30px;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 4px 20px skyblue, 0 0 20px black, 0 0 30px blue;
+}
+#home {
+    margin-top: 80px;
+    margin-left: 0px;
+    margin-right: 20px;
+}
+#care{
+    margin-top: 70px;
+    margin-right: 110px;
+
+
+}
+#care img{
+    padding-left: 10px;
+    box-shadow: 4px 4px 20px lightgreen, 0 0 40px black, 0 0 40px skyblue;
+}
